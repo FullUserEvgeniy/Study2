@@ -84,12 +84,13 @@ public class Main {
 
     public static void main(String[] args) {
 	    TwoDShape shapes[]=new TwoDShape[5]; //используем массив для создания множественных объектов
-	    shapes[0]=new Triangle("контурный",8,12); //инициализация массива (создаем объекты)
-	    shapes[1]=new Rectangle(10); //инициализация массива (создаем объекты)
-	    shapes[2]=new Rectangle(10,4); //инициализация массива (создаем объекты)
-	    shapes[3]=new Triangle(7); //инициализация массива (создаем объекты)
-	    shapes[4]=new TwoDShape(10,20,"фигура"); //инициализация массива (создаем объекты)
-	    for (int i=0;i<shapes.length;i++){ //вывод в консоль параметров созданных объектов
+	    shapes[0]=new Triangle("контурный",8,12); //инициализация массива (создаем объект)
+	    shapes[1]=new Rectangle(10); //инициализация массива (создаем объект)
+	    shapes[2]=new Rectangle(10,4); //инициализация массива (создаем объект)
+	    shapes[3]=new Triangle(7); //инициализация массива (создаем объект)
+	    shapes[4]=new TwoDShape(10,20,"фигура"); //инициализация массива (создаем объект)
+	    //вывод в консоль параметров созданных объектов
+	    for (int i=0;i<shapes.length;i++){
             System.out.println("Объект - "+shapes[i].getName());
             System.out.println("Площадь - "+shapes[i].area());
             System.out.println();
